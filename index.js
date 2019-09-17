@@ -13,3 +13,18 @@ function tailsNeverFails() {
   }
   return `You got ${tails} tails in a row!`
 }
+
+function writeCards(names, event) {
+  let newArray = []
+  for (i = 0; i < names.length; i++) {
+    newArray[i] = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
+  }
+  return newArray;
+}
+
+function countdown(integer) {
+  while (integer >= 0) {
+    console.log(integer)
+    integer--;
+  }
+}
